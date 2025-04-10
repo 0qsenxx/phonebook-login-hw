@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/recat-phonebook-async/static/css/main.b630fd59.css",
-    "main.js": "/recat-phonebook-async/static/js/main.e25a9e55.js",
-    "index.html": "/recat-phonebook-async/index.html",
-    "main.b630fd59.css.map": "/recat-phonebook-async/static/css/main.b630fd59.css.map",
-    "main.e25a9e55.js.map": "/recat-phonebook-async/static/js/main.e25a9e55.js.map"
+    "main.css": "/phonebook-login-hw/static/css/main.b630fd59.css",
+    "main.js": "/phonebook-login-hw/static/js/main.e25a9e55.js",
+    "index.html": "/phonebook-login-hw/index.html",
+    "main.b630fd59.css.map": "/phonebook-login-hw/static/css/main.b630fd59.css.map",
+    "main.e25a9e55.js.map": "/phonebook-login-hw/static/js/main.e25a9e55.js.map"
   },
   "entrypoints": [
     "static/css/main.b630fd59.css",
