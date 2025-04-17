@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { register } from "../../redux/auth/operations";
 import { Navigate } from "react-router-dom";
+import css from "./Register.module.css";
 
 const Register = () => {
   const dispatch = useDispatch();
@@ -22,17 +23,17 @@ const Register = () => {
   return auth.isLoggedIn ? (
     <Navigate to="/contacts" />
   ) : (
-    <div>
-      <form onSubmit={(evt) => handleSignup(evt)}>
-        <label>
+    <div className={css.registerBox}>
+      <form onSubmit={(evt) => handleSignup(evt)} className={css.registerForm}>
+        <label className={css.registerLabel}>
           First name
           <input type="text" placeholder="First name" name="name" />
         </label>
-        <label>
+        <label className={css.registerLabel}>
           Email
           <input type="email" placeholder="Email" name="email" />
         </label>
-        <label>
+        <label className={css.registerLabel}>
           Password
           <input type="text" placeholder="Password" name="password" />
         </label>

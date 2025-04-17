@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux";
 import { login } from "../../redux/auth/operations";
 import { Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import css from "./Login.module.css";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -22,13 +23,13 @@ const Login = () => {
   return auth.isLoggedIn ? (
     <Navigate to="/contacts" />
   ) : (
-    <div>
-      <form onSubmit={(evt) => handleLogin(evt)}>
-        <label>
+    <div className={css.loginBox}>
+      <form onSubmit={(evt) => handleLogin(evt)} className={css.loginForm}>
+        <label className={css.loginLabel}>
           Email
           <input type="email" placeholder="Email" name="email" />
         </label>
-        <label>
+        <label className={css.loginLabel}>
           Password
           <input type="text" placeholder="Password" name="password" />
         </label>
